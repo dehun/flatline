@@ -1,0 +1,445 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SCANDLG DIALOGEX 10, 24, 409, 261
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SCANDLG_TARGLIST,7,7,325,218,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Scan",IDC_SCANDLG_SCANBTN,338,71,63,17,BS_FLAT | 
+                    WS_GROUP
+    PUSHBUTTON      "Add file",IDC_SCANDLG_ADDFILEBTN,338,7,63,17,BS_FLAT | 
+                    WS_GROUP
+    PUSHBUTTON      "Add dir",IDC_SCANDLG_ADDDIRBTN,338,28,63,18,BS_FLAT | 
+                    WS_GROUP
+    PUSHBUTTON      "Del",IDC_SCANDLG_DELBTN,338,50,63,17,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "Pause",IDC_SCANDLG_PAUSEBTN,338,92,63,18,BS_FLAT | 
+                    WS_DISABLED | WS_GROUP
+    LTEXT           "State :",IDC_STATIC,7,231,25,10
+    EDITTEXT        IDC_SCANDLG_CURSCANEDT,32,230,369,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SCANDLG_SCANPB,"msctls_progress32",WS_BORDER,7,
+                    245,394,11
+END
+
+IDD_REPORTDLG DIALOGEX 10, 24, 409, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save rep as txt",IDC_REPORTDLG_SAVEREPBTN,208,238,60,15,
+                    BS_FLAT
+    PUSHBUTTON      "Delete",IDC_REPORTDLG_DELETEACTIONBTN,7,238,60,15,
+                    BS_FLAT
+    PUSHBUTTON      "Cure",IDC_REPORTDLG_CUREACTIONBTN,73,238,60,15,BS_FLAT
+    PUSHBUTTON      "Move to Q",IDC_REPORTDLG_MOVETOQACTIONBTN,142,238,60,15,
+                    BS_FLAT
+END
+
+IDD_SETTINGSDLG DIALOGEX 10, 24, 409, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Heuristic analyze :",IDC_SETTINGSDLG_HERSCANCB,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,15,
+                    30,76,8
+    CONTROL         "Signature analyze :",IDC_SETTINGSDLG_SIGSCANCB,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,15,
+                    17,76,9
+    GROUPBOX        "If found virus :",IDC_STATIC,113,7,99,94,BS_LEFT
+    CONTROL         "Ask for action",IDC_SETTINGSDLG_AFARB,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT | WS_GROUP,
+                    119,17,80,8
+    CONTROL         "Move to quarantine",IDC_SETTINGSDLG_MQUARANTINECB,
+                    "Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,120,
+                    46,79,8
+    CONTROL         "Delete it ",IDC_SETTINGSDLG_DELITRB,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,120,26,79,8
+    CONTROL         "Try to cure",IDC_SETTINGSDLG_CURECB,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,120,36,79,8
+    CONTROL         "No action",IDC_SETTINGSDLG_NOACTIONCB,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,120,56,79,8
+    GROUPBOX        "Modes of scaning :",IDC_STATIC,7,7,94,94,BS_LEFT
+    CONTROL         "Copy to quarantine",IDC_SETTINGSDLG_CQCB,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,121,
+                    66,78,9
+    GROUPBOX        "Extensions",IDC_STATIC,224,7,112,94,BS_LEFT
+    LISTBOX         IDC_SETTINGSDLG_EXTLISTLB,227,14,87,84,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_SETTINGSDLG_ADDEXTBTN,315,15,17,12,BS_FLAT
+    PUSHBUTTON      "-",IDC_SETTINGSDLG_DELEXTBTN,315,27,17,12,BS_FLAT
+    GROUPBOX        "If can't cure",IDC_STATIC,7,105,99,94,BS_LEFT
+    CONTROL         "Ask for action",IDC_SETTINGSDLG_AFARB2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT | WS_GROUP,13,
+                    116,80,8
+    CONTROL         "Move to quarantine",IDC_SETTINGSDLG_MQUARANTINECB2,
+                    "Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,14,
+                    145,79,8
+    CONTROL         "Delete it ",IDC_SETTINGSDLG_DELITRB2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,14,124,79,8
+    CONTROL         "Try to cure",IDC_SETTINGSDLG_CURECB2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT | WS_DISABLED,
+                    14,135,79,8
+    CONTROL         "No action",IDC_SETTINGSDLG_NOACTION2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,14,154,79,8
+    CONTROL         "Copy to quarantine",IDC_SETTINGSDLG_CQCB2,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_FLAT | WS_TABSTOP,15,
+                    164,78,9
+    GROUPBOX        "Paths",IDC_STATIC,119,105,217,57,BS_LEFT
+    PUSHBUTTON      "Save settings",IDC_SETTINGSDLG_SAVESETTINGSBTN,7,244,83,
+                    16,BS_FLAT
+    PUSHBUTTON      "Set to default",IDC_SETTINGSDLG_SETTODEFBTN,95,244,83,
+                    16,BS_FLAT
+    LTEXT           "Quarantine folder :",IDC_STATIC,124,112,89,8
+    EDITTEXT        IDC_SETTINGSDLG_QUARANTINEEDT,131,122,201,11,
+                    ES_AUTOHSCROLL
+    LTEXT           "Extensions file  :",IDC_STATIC,124,134,89,8
+    EDITTEXT        IDC_SETTINGSDLG_EXTPATHEDT,131,144,201,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "CLR",IDC_SETTINGSDLG_CLREXTBTN,315,39,17,12,BS_FLAT
+    GROUPBOX        "Report settings :",IDC_STATIC,119,166,217,34
+    CONTROL         "Add only infected files to report",
+                    IDC_SETTINGSDLG_AOICB,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,129,178,127,10
+    GROUPBOX        "Emulator :",IDC_STATIC,7,202,133,37
+    LTEXT           "Emulation time :",IDC_STATIC,15,211,56,10
+    LTEXT           "Check step :",IDC_STATIC,15,222,52,8
+    EDITTEXT        IDC_SETTINGSDLG_EMULTIMEEDT,71,211,64,10,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_SETTINGSDLG_CHECKSTEPEDT,71,223,64,10,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Emulation :             ",IDC_SETTINGSDLG_EMULCB,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,17,41,74,8,
+                    WS_EX_RIGHT
+END
+
+IDD_EXTADDDLG DIALOGEX 0, 0, 186, 42
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Add extension :"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,44,21,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,103,21,50,14,BS_FLAT
+    EDITTEXT        IDC_ADDEXTDLG_EXTEDT,7,7,172,12,ES_AUTOHSCROLL
+END
+
+IDD_AFADLG DIALOGEX 0, 0, 273, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        5000,7,17,262,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Delete",5001,7,58,64,14,BS_FLAT
+    PUSHBUTTON      "Cure",5002,73,58,64,14,BS_FLAT
+    PUSHBUTTON      "Move to Q",5003,139,58,64,14,BS_FLAT
+    PUSHBUTTON      "No action",5004,205,58,64,14,BS_FLAT
+    EDITTEXT        5005,7,39,262,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File path :",-1,7,7,73,8
+    LTEXT           "Vir name :",-1,7,31,47,8
+END
+
+IDD_VDBEDITDLG DIALOGEX 10, 24, 409, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "VDB information :",IDC_STATIC,7,7,393,59
+    LTEXT           "Total signatures :",IDC_STATIC,16,29,61,8
+    EDITTEXT        IDC_VDBEDTDLG_TOTALSIGEDT,76,28,88,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "VDB file size :",IDC_STATIC,16,40,61,8
+    EDITTEXT        IDC_VDBEDTDLG_VDBFILESIZEEDT,76,39,88,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Last update :",IDC_STATIC,16,50,61,8
+    EDITTEXT        IDC_VDBEDTDLG_LASTUPDATEEDT,76,50,88,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Add sig",IDC_VDBEDTDLG_ADDSIGBTN,345,70,55,15,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "Del sig",IDC_VDBEDTDLG_DELSIGBTN,345,86,55,15,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "Edit sig",IDC_VDBEDTDLG_EDITSIGBTN,345,102,55,15,
+                    BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "Save VDB",IDC_VDBEDTDLG_SAVEVDBBTN,345,118,55,15,
+                    BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "Load VDB",IDC_VDBEDTDLG_LOADVDBBTN,345,134,55,15,
+                    BS_FLAT
+    LTEXT           "File name :",IDC_STATIC,16,18,61,8
+    EDITTEXT        IDC_VDBEDTDLG_FILENAMEEDT,76,16,321,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Unload VDB",IDC_VDBEDTDLG_UNLOADVDBBTN,345,151,55,15,
+                    BS_FLAT | WS_DISABLED
+END
+
+IDD_ABOUTDLG DIALOGEX 10, 24, 409, 260
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Progam info :",IDC_STATIC,7,7,191,40
+    LTEXT           "Program.........Hunter ( a part of Wolf antivirus )",
+                    IDC_STATIC,21,18,171,9
+    LTEXT           "Version..........0x0( alfa )",IDC_STATIC,21,26,146,9
+    LTEXT           "Release date...28.10.2005",IDC_STATIC,21,33,129,9
+    GROUPBOX        "About author info :",IDC_STATIC,7,50,191,65
+    LTEXT           "Name............ Netesoff   "" DeHunter""    Yurii",
+                    IDC_STATIC,21,60,149,9
+    LTEXT           "Site...............http://dehunter.cjb.net",IDC_STATIC,
+                    21,69,142,9
+    LTEXT           "EMail.............dehunter@inbox.ru, flatline@inbox.ru",
+                    IDC_STATIC,21,78,174,8
+    LTEXT           "ICQ..............422259",IDC_STATIC,22,88,172,9
+    GROUPBOX        "Program description :",IDC_STATIC,203,7,197,106
+    GROUPBOX        "Thanks :",IDC_STATIC,7,118,192,63
+    LTEXT           "Nadejda Alekseivna - my teacher of informatics",
+                    IDC_STATIC,22,128,171,8
+    LTEXT           "wasm.ru - the best site about low level programming",
+                    IDC_STATIC,21,137,171,8
+    LTEXT           "blacklogic.net - russian security team",IDC_STATIC,21,
+                    147,171,8
+    EDITTEXT        IDC_ABOUTDLG_DESCREDT,209,18,184,89,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN
+    GROUPBOX        "Author photo :",IDC_STATIC,205,118,190,135
+    CONTROL         113,IDC_STATIC,"Static",SS_BITMAP,230,127,133,120
+END
+
+IDD_ADDSIGDLG DIALOGEX 0, 0, 255, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION ":: FlatLine antivirus scanner :: - Add signature"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,87,196,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,153,196,50,14,BS_FLAT
+    LTEXT           "Vir name[30 chars] :",IDC_STATIC,7,9,65,8
+    EDITTEXT        IDC_ADDSIGDLG_VIRNAMEEDT,87,7,103,13,ES_AUTOHSCROLL
+    LTEXT           "Type :",IDC_STATIC,7,25,65,8
+    LTEXT           "Sig size [ 0..256] :",IDC_STATIC,7,41,65,8
+    EDITTEXT        IDC_ADDSIGDLG_SIGSIZEEDT,87,38,104,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "Signature :",IDC_STATIC,7,57,65,8
+    EDITTEXT        IDC_ADDSIGDLG_SIGEDT,74,64,174,127,ES_MULTILINE | 
+                    ES_WANTRETURN
+    COMBOBOX        IDC_ADDSIGDLG_VIRTYPECB,87,23,104,12,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "  0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F",
+                    IDC_STATIC,75,55,173,9
+    PUSHBUTTON      "Calc sig size",IDC_ADDSIGDLG_CALCSIGSIZEBTN,198,37,50,
+                    14,BS_FLAT
+END
+
+IDD_WAITDLG DIALOGEX 0, 0, 186, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,51,37,77,14
+    CONTROL         "",IDC_WAITDLG_STATUSPB,"msctls_progress32",WS_BORDER,7,
+                    22,172,11
+    EDITTEXT        IDC_WAITDLG_STATUSEDT,7,7,172,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SCANDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_REPORTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_SETTINGSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+    END
+
+    IDD_EXTADDDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 35
+    END
+
+    IDD_AFADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_VDBEDITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_ADDSIGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_WAITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGOBMP             BITMAP                  "wolf_logo_left.bmp"
+IDB_MYPHOTOBMP          BITMAP                  "me.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICON            ICON                    "main_icon.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
